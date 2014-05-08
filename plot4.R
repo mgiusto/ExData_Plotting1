@@ -23,7 +23,7 @@ plot(data$Sub_metering_1~data$datetime,type="l",xlab="",ylab="Energy sub meterin
 lines(data$Sub_metering_2~data$datetime,col="red")
 lines(data$Sub_metering_3~data$datetime,col="blue")
 legend("topright",lty=c(1,1,1), col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
-       cex=0.5,bty="n")
+       cex=0.9,bty="n")
 #generate bottom-left plot
 with(data,plot(Global_reactive_power~datetime,type="l",xlab = "datetime"))
 dev.off()
